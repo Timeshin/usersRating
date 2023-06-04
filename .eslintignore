@@ -2,5 +2,3 @@ package*.json
 node_modules
 .husky
 dist
-*.config.js
-*.config.ts

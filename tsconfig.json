@@ -6,10 +6,10 @@
     "paths": {
       "@/styles/*": ["styles/*"],
       "@/types/*": ["types/*"],
-      "@/stores": ["stores/index"],
+      "@/stores/*": ["domain/stores/*"],
+      "@/domain/*": ["domain/*"],
+      "@/adapters/*": ["adapters/*"],
       "@/config/*": ["config/*"],
-      "@/services/*": ["services/*"],
-      "@/utils/*": ["utils/*"],
       "@/components": ["presntation/components/index"],
       "@/layouts": ["presntation/layouts/index"]
     },
@@ -27,6 +27,6 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["src", "src/vite-env.d.ts"],
+  "include": ["src", "src/vite-env.d.ts", "src/shared-kernel.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
