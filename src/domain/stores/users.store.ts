@@ -77,6 +77,7 @@ const useUsersStore = create<IUsersState & IUsersActions>()(
 		})),
 		{
 			name: 'usersStore',
+			// Convert all users (objects) from local storage to Class User
 			onRehydrateStorage: () => (state) => {
 				state.initializeUsers(state.users)
 			}

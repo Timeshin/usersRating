@@ -18,7 +18,7 @@ export class UserEvaluation {
 		this.checkIsUserReachedLimit()
 	}
 
-	checkIsUserReachedLimit() {
+	private checkIsUserReachedLimit() {
 		if (this.user.rating === 5) {
 			useModalStore.getState().openModal('positive', this.user)
 		}
