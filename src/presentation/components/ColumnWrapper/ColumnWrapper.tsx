@@ -8,8 +8,8 @@ interface IColumnWrapper {
 
 const ColumnWrapper: FC<IColumnWrapper> = ({ children }) => (
 	<Grid container justifyContent='center'>
-		<Grid item xs={12} sm={6}>
-			<Paper elevation={2} sx={{ p: 2, height: '70vh', overflow: 'auto' }}>
+		<Grid item sm={10}>
+			<Paper elevation={2} sx={{ position: 'relative', p: 2, height: '70vh', overflow: 'auto' }}>
 				{children}
 			</Paper>
 		</Grid>

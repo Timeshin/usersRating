@@ -11,6 +11,7 @@ export default ({ mode }) => {
 			alias: {
 				'@/styles': path.resolve(__dirname, './src/styles/'),
 				'@/types': path.resolve(__dirname, './src/types/'),
+				'@/hooks': path.resolve(__dirname, './src/hooks/'),
 				'@/stores': path.resolve(__dirname, './src/domain/stores'),
 				'@/domain': path.resolve(__dirname, './src/domain/'),
 				'@/adapters': path.resolve(__dirname, './src/adapters/'),

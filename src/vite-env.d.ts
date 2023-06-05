@@ -8,5 +8,4 @@ interface ImportMeta {
 	readonly env: ImportMetaEnv
 }
 
-declare module '*.scss'
 declare module '*.svg'

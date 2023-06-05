@@ -12,7 +12,8 @@
       "@/config/*": ["config/*"],
       "@/pages/*": ["presentation/pages/*"],
       "@/components": ["presentation/components/index"],
-      "@/layouts": ["presentation/layouts/index"]
+      "@/layouts": ["presentation/layouts/index"],
+      "@/hooks": ["hooks/index"]
     },
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": false,
