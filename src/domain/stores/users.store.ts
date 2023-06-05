@@ -85,3 +85,5 @@ const useUsersStore = create<IUsersState & IUsersActions>()(
 )
 
 export { useUsersStore }
+
+useUsersStore.subscribe((state) => console.log(state, 'users store action'))

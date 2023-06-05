@@ -73,3 +73,5 @@ const useNegativeUsersStore = create<INegativeUsersState & INegativeUsersActions
 )
 
 export { useNegativeUsersStore }
+
+useNegativeUsersStore.subscribe((state) => console.log(state, 'users negative action'))

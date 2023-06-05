@@ -73,3 +73,5 @@ const usePositiveUsersStore = create<IPositiveUsersState & IPositiveUsersActions
 )
 
 export { usePositiveUsersStore }
+
+usePositiveUsersStore.subscribe((state) => console.log(state, 'positive users store action'))
