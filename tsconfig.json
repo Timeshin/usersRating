@@ -10,8 +10,9 @@
       "@/domain/*": ["domain/*"],
       "@/adapters/*": ["adapters/*"],
       "@/config/*": ["config/*"],
-      "@/components": ["presntation/components/index"],
-      "@/layouts": ["presntation/layouts/index"]
+      "@/pages/*": ["presentation/pages/*"],
+      "@/components": ["presentation/components/index"],
+      "@/layouts": ["presentation/layouts/index"]
     },
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": false,

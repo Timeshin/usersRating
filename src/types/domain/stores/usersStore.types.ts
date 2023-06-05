@@ -1,4 +1,4 @@
-import { User } from 'domain/entities/User'
+import { User } from '@/domain/entities/User'
 
 export interface IUser {
 	id: Id
@@ -18,6 +18,8 @@ export interface IUsersState {
 export interface IUsersActions {
 	setUsers: (users: User[]) => void
 	addUsers: (users: User) => void
-	incrementRating: (userId: string) => void
-	decrementRating: (userId: string) => void
+	removeUser: (userUid: string) => void
+	incrementRating: (userUid: string) => void
+	decrementRating: (userUid: string) => void
+	getUsers: () => Promise<void>
 }

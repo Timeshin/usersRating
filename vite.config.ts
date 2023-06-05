@@ -15,8 +15,9 @@ export default ({ mode }) => {
 				'@/domain': path.resolve(__dirname, './src/domain/'),
 				'@/adapters': path.resolve(__dirname, './src/adapters/'),
 				'@/config': path.resolve(__dirname, './src/config/'),
-				'@/components': path.resolve(__dirname, './src/presntation/components/'),
-				'@/layouts': path.resolve(__dirname, './src/presntation/layouts/')
+				'@/components': path.resolve(__dirname, './src/presentation/components/'),
+				'@/layouts': path.resolve(__dirname, './src/presentation/layouts/'),
+				'@/pages': path.resolve(__dirname, './src/presentation/pages/')
 			}
 		},
 		plugins: [react()],

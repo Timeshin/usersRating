@@ -13,4 +13,10 @@ export class UserService {
 
 		return usersResponse.map((user) => new User(user))
 	}
+
+	async getNextUsersPage(page: number) {
+		const usersResponse = await this.userApi.fetchNextUsersPage(page)
+
+		return usersResponse.map((user) => new User(user))
+	}
 }

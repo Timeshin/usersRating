@@ -1,7 +1,5 @@
-const App = () => (
-	<>
-		<h1></h1>
-	</>
-)
+import MainPage from '@/pages/MainPage'
+
+const App = () => <MainPage />
 
 export default App

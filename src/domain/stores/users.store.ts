@@ -1,7 +1,7 @@
 import { IUsersActions, IUsersState } from '@/types/domain/stores/usersStore.types'
 import { create } from 'zustand'
 import { immer } from 'zustand/middleware/immer'
-import { persist } from 'zustand/middleware/persist'
+import { persist } from 'zustand/middleware'
 import { UserService } from '@/domain/services/UserService'
 import { UserApi } from '@/adapters/UserApi'
 import { UserEvaluation } from '@/domain/useCases/UserEvaluation'
@@ -19,6 +19,10 @@ const useUsersStore = create<IUsersState & IUsersActions>()(
 			addUsers: (users) =>
 				set((state: IUsersState) => {
 					state.users.push(users)
+				}),
+			removeUser: (userUid) =>
+				set((state: IUsersState) => {
+					state.users = state.users.filter(({ uid }) => uid === userUid)
 				}),
 			incrementRating: (userUid) =>
 				set((state: IUsersState) => {
